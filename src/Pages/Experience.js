@@ -100,7 +100,7 @@ const Experience = () => {
           <span>Back</span>
         </button>
 
-        <div class="container  bg-dark m-auto  flex items-center justify-center flex-col p-5 text-white">
+        <div class="container bg-dark m-auto flex items-center justify-center flex-col p-5 text-white">
           {loading && <CardLoader />}
           {!loading && (
             <>
@@ -110,11 +110,10 @@ const Experience = () => {
               )}
               <div className="border py-2 w-full flex items-center justify-center flex-col">
                 <button
-                  className={`redirect-btn mt-2 hover:scale-110 ${
-                    bookMarked
-                      ? "cursor-not-allowed disabled:opacity-30"
-                      : "cursor-pointer"
-                  }`}
+                  className={`redirect-btn mt-2 hover:scale-110 ${bookMarked
+                    ? "cursor-not-allowed disabled:opacity-30"
+                    : "cursor-pointer"
+                    }`}
                   onClick={addToBookMark}
                 >
                   <span>
